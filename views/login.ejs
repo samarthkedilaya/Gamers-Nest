@@ -1,0 +1,35 @@
+
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <center><img class="center mb-3" height="150px" width="150px" src="https://i.ibb.co/vqr9SZk/logo.jpg"></img></center>
+        <% include ./partials/messages %>
+        <form action="/users/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-secondary btn-block" style="background-color: black">Login</button>
+        </form>
+        <p class="lead mt-4">
+          No Account? <a href="/users/register" style="color:blue"><b>Register</b></a>
+        </p>
+      </div>
+    </div>
+  </div>
